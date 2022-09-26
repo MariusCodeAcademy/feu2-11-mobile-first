@@ -1,8 +1,31 @@
 @import 'reset.css';
 
+html {
+  font-size: 100%;
+}
+
 @media screen and (min-width: 768px) {
   /* tablet taisykles */
-  .card {
-    background-color: rgb(248, 149, 131);
+
+  .post_1 {
+    grid-area: one;
+  }
+  .post_2 {
+    grid-area: two;
+  }
+  .post_3 {
+    grid-area: three;
+  }
+  .post_4 {
+    grid-area: four;
+  }
+
+  .posts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'one one one one'
+      'two two three four';
   }
 }

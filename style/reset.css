@@ -52,6 +52,7 @@ p {
 }
 
 .container {
+  padding: 0.8rem;
 }
 
 .card {
