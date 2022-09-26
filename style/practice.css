@@ -45,3 +45,22 @@ html {
   line-height: 1.4;
   text-transform: uppercase;
 }
+
+/* POSTS */
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.post__header {
+  align-self: center;
+  max-width: 60%;
+  padding: 0 1.5rem;
+}
+
+.post__header,
+.post__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
