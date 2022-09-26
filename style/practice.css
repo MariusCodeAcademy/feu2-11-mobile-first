@@ -49,18 +49,43 @@ html {
 /* POSTS */
 
 .post {
-  display: grid;
-  grid-template-columns: 1fr;
+  position: relative;
+  height: 320px;
 }
 
 .post__header {
-  align-self: center;
-  max-width: 60%;
-  padding: 0 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.5rem;
+  color: #fff;
+  width: 60%;
+  max-width: 250px;
 }
 
-.post__header,
 .post__image {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  height: 100%;
+  width: 100%;
+  /* neiskraipyti paveikslelio */
+  object-fit: cover;
+}
+
+.post__overlay {
+  background-color: rgb(255 99 71 / 54%);
+  position: absolute;
+  /* padaro absolute elementa per visa tevinio el dydi */
+  inset: 0;
+}
+.post__overlay--blue {
+  background-color: rgba(43, 100, 223, 0.54);
+}
+.post__overlay--green {
+  background-color: rgba(44, 118, 42, 0.54);
+}
+
+.post__hr {
+  background-color: #fff;
+  height: 2px;
+  margin-bottom: 0.8rem;
+  width: 100%;
 }
