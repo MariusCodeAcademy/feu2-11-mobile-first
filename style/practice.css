@@ -16,6 +16,12 @@ html {
   text-transform: uppercase;
 }
 
+.btn--arrow::after {
+  content: '\2192';
+  font-size: 2rem;
+  padding: 0 0 0 10px;
+}
+
 /* HERO */
 
 .hero {
@@ -87,7 +93,7 @@ html {
   height: 2px;
   margin: 0.7rem 0;
   width: 100%;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.7s ease-out;
   transform-origin: left;
 }
 .post__overlay {
