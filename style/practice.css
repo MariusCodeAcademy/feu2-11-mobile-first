@@ -51,7 +51,7 @@ html {
 .post {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 320px;
+  height: 320px;
 }
 
 .post__header {
@@ -70,10 +70,11 @@ html {
 .post__image {
   align-self: stretch;
   object-fit: cover;
+  width: 100%;
 }
 
 .post__overlay {
-  background-color: rgba(61, 171, 225, 0.18);
+  background-color: rgba(61, 171, 225, 0.58);
 }
 .post__title {
   text-transform: capitalize;
